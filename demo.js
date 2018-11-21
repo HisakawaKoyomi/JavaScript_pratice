@@ -1,7 +1,13 @@
-var arr = [];
-for(var i = 0 ;i<10;i++){
-    var c = i;
-    arr[i] = function(){ console.log(c) };
-}
-
-arr[5]() // 9
+/*let arr = [1,2,3];
+let i = 0;
+arr[i++] += 5;
+console.log(arr[0]);
+console.log(i);
+*/
+let arr = [1,2,3];
+let i = 0;
+arr[i++] = arr[i++] + 5;
+console.log(arr[2]);
+console.log(arr[1]);
+console.log(arr[0]);
+console.log(i);
