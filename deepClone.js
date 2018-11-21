@@ -11,7 +11,7 @@ function deepClone(obj){
         //如果为Function类型,则跳出，不执行枚举传递的操作。在递归中跳出，返回的值是传给对应的枚举项。
     }
 
-    for(var key in obj){
+    for(let key in obj){
         var copy = obj[key];
         var key_type = Object.prototype.toString.call(copy).slice(8,-1);
         if(key_type === 'Object'){
