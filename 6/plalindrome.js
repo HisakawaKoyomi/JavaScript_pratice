@@ -1,4 +1,4 @@
-const pld = 'acdcba';
+const pld = 'a1bcdcb1a';
 
 /*方法一
 function isPalindrome(str) {
@@ -22,8 +22,15 @@ function isPalindrome(str){
 */
 
 
-function isPalindorme(pld) {
-    
+function isPalindorme(str) {
+    let index = 0;
+    let len = str.length;
+    while(index++ < len/2){
+        if (str[index]!==str[len-index-1]){
+            return false;
+        }
+    }
+    return true;
 }
 
 console.log(isPalindorme(pld));
