@@ -1,7 +1,7 @@
 function multiplyObj(obj) {
-    for (let prop in obj){
-        if (obj.hasOwnProperty(prop) && typeof obj[prop] === 'number'){
-            obj[prop] = obj[prop]*2;
+    for (let prop in obj) {
+        if (obj.hasOwnProperty(prop) && typeof obj[prop] === 'number') {
+            obj[prop] = obj[prop] * 2;
         }
     }
     return obj;
