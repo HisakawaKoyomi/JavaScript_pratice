@@ -1,6 +1,4 @@
-let arr = ["a","b"];
-arr.push(function(){
-    console.log(this);
-});
+let a = [21,2];
+let b = a[0];
 
-console.log(arr[1]);
+console.log(b.length);
