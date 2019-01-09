@@ -1,4 +1,13 @@
-let a = [21,2];
-let b = a[0];
+function func() {
+    try {
+        return 1;
+    }catch (e) {
+        console.log('catch');
+    }finally {
+        console.log('finally');
+        return 2
+    }
+    console.log('end');
+}
 
-console.log(b.length);
+console.log(func());
