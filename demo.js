@@ -1,13 +1,4 @@
-function func() {
-    try {
-        return 1;
-    }catch (e) {
-        console.log('catch');
-    }finally {
-        console.log('finally');
-        return 2
-    }
-    console.log('end');
-}
-
-console.log(func());
+let buffer = new ArrayBuffer(1024);
+let a = new Uint8Array(buffer);
+a[0] = 0xff;
+console.log(a[0]);
