@@ -1,7 +1,5 @@
-const promiseTimers = [];
-for (let i = 0;i <= 10;i++){
-    promiseTimers.push(setTimeout(function () {
-                console.log(i);
-            },i*1000)
-        )
-}
+let arr = ['blue','green'];
+arr.notAnIndex = 123;
+Array.prototype.protoProp = 456;
+
+for(k in arr) console.log(k);
