@@ -1,5 +1,13 @@
-let arr = ['blue','green'];
-arr.notAnIndex = 123;
-Array.prototype.protoProp = 456;
+setTimeout(() => console.log('1'));
 
-for(k in arr) console.log(k);
+let pro = new Promise(resolve => {
+    setTimeout(function (){
+        console.log('2');
+        resolve();
+    });
+
+});
+pro.then(() => (setTimeout(() => console.log('3'))));
+console.log('4');
+
+
