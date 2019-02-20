@@ -35,3 +35,4 @@ some pratice and demo for Js
 |27|Iterator|es6，迭代器|
 |28|Generator|es6，异步|
 |29|Reflection|es6，异步|
+|30|7sortAlgorithm|7种排序算法（冒泡，选择，插入，希尔，归并，快速，堆）|
